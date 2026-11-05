@@ -1,0 +1,28 @@
+# Engine-generated cache
+.godot/
+.import/
+
+# Exported builds and local tools
+build/
+builds/
+dist/
+exports/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+export_credentials.cfg
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
