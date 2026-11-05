@@ -6,8 +6,6 @@
 - Tên repository: spike-ball.
 - Chế độ repository: public.
 - Chủ repository: minhkhoi2403; địa chỉ https://github.com/minhkhoi2403/spike-ball.
-- Nhóm: hai người.
-- Không áp hạn hoàn thành 4 tuần; làm theo thứ tự phụ thuộc và tiêu chí từng mốc.
 - Sân có màu dễ nhìn ngay từ phiên bản đầu, không dùng sân hộp xám.
 - Camera sau đội người chơi, cao nhìn xuống; lưới ngang; phép chiếu trực giao, không đổi kích thước sprite theo khoảng cách.
 - Một cầu thủ do người chơi điều khiển; các cầu thủ khác là AI.
