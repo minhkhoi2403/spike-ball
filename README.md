@@ -4,7 +4,12 @@ Game bóng chuyền 2D pixel, chế độ sự nghiệp một cầu thủ. Dự 
 
 ## Trạng thái
 
-Đang chuẩn bị nền tảng. Repository hiện có roadmap và quy ước cộng tác, chưa có game chạy được hoặc bản deploy.
+Mốc chơi thử hiện tại là [set tập 7 điểm](prototypes/browser/spike-ball-set-7.html). Sau khi clone, mở file HTML này bằng Chrome hoặc Edge trên PC rồi bấm **Bắt đầu set**. Các sprite đã được nhúng trong file.
+
+- WASD di chuyển, Space nhảy, chuột trái nhắm và đập, chuột phải đỡ. Người chơi điều khiển Thảo xuyên suốt set.
+- Set kết thúc từ 7 điểm với cách biệt 2. Giao bóng tự động. Đội vừa giành quyền phát xoay vòng. Libero thay phụ công tại vị trí 5 và 6 trong thể thức tập này.
+- Các bản thử trước nằm cạnh bản set gồm tập đập, pha bóng hai chiều có tình huống libero bơi cá, và mẫu tạo hình nhân vật.
+- Việc tiếp theo đề xuất: thêm trạng thái quan sát khi Thảo ra sân và trả quyền điều khiển khi Thảo trở lại. Engine và phiên bản vẫn cần chốt.
 
 ## Định hướng
 
