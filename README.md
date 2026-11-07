@@ -4,12 +4,15 @@ Game bóng chuyền 2D pixel, chế độ sự nghiệp một cầu thủ. Dự 
 
 ## Trạng thái
 
-Mốc chơi thử hiện tại là [set tập 7 điểm](prototypes/browser/spike-ball-set-7.html). Sau khi clone, mở file HTML này bằng Chrome hoặc Edge trên PC rồi bấm **Bắt đầu set**. Các sprite đã được nhúng trong file.
+Bản mới nhất để thử trên iPhone là [Spike Ball Mobile](prototypes/browser/spike-ball-mobile.html), chơi ngang màn hình với joystick và ba nút Nhảy, Đánh, Đỡ. [Mở bản đã xuất bản](https://spike-ball-mobile-0711.equalsorbet4.chatgpt.site). Link hiện riêng tư, yêu cầu quyền truy cập của chủ dự án.
 
-- WASD di chuyển, Space nhảy, chuột trái nhắm và đập, chuột phải đỡ. Người chơi điều khiển Thảo xuyên suốt set.
-- Set kết thúc từ 7 điểm với cách biệt 2. Giao bóng tự động. Đội vừa giành quyền phát xoay vòng. Libero thay phụ công tại vị trí 5 và 6 trong thể thức tập này.
-- Các bản thử trước nằm cạnh bản set gồm tập đập, pha bóng hai chiều có tình huống libero bơi cá, và mẫu tạo hình nhân vật.
-- Việc tiếp theo đề xuất: thêm trạng thái quan sát khi Thảo ra sân và trả quyền điều khiển khi Thảo trở lại. Engine và phiên bản vẫn cần chốt.
+- Joystick để chạy và chọn hướng; Nhảy để bật; giữ/thả Đánh để lấy lực tới 100%; Đỡ để nhận bóng hoặc chuyền thay.
+- Trên PC, mở [bản bàn phím](prototypes/browser/spike-ball-keyboard.html): mũi tên chạy/chọn hướng, Space nhảy, A đỡ/chuyền, S bỏ nhỏ, giữ/thả D đánh, Z+D đánh dài, C+D đập cắm.
+- [Bản AI theo vai trò](prototypes/browser/spike-ball-role-ai.html) có tình huống bước một thường, lệch và cần người chuyền thay. Chuyền hai ưu tiên bóng hai, phân phối cho chủ công, đối chuyền và phụ công.
+- Các bản cũ, bao gồm set tập 7 điểm, nằm trong cùng thư mục để so sánh.
+- Ưu tiên tiếp theo: thử cảm ứng trên iPhone thật, điều chỉnh nhịp nhảy–đánh và tiếp tục cải thiện trận đấu/AI. Engine và phiên bản còn mở.
+
+Xem [bàn giao mobile](docs/MOBILE_HANDOFF.md) để biết cách chạy và phạm vi kiểm tra.
 
 ## Định hướng
 
