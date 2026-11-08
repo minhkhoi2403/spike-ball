@@ -4,20 +4,28 @@ Game bóng chuyền 2D pixel, chế độ sự nghiệp một cầu thủ. Dự 
 
 ## Trạng thái
 
+Bản thử Godot 4.7.2 ở `game/`: camera chéo, 12 cầu thủ, di chuyển/nhảy và bóng minh họa. Mở `game/project.godot`, nhấn F5. Đây chưa phải bản chuyển đầy đủ gameplay; xem `game/README.md`. Định hướng phát hành đã chuyển sang app mobile.
+
 Bản mới nhất để thử trên iPhone là [Spike Ball Mobile](prototypes/browser/spike-ball-mobile.html), chơi ngang màn hình với joystick và ba nút Nhảy, Đánh, Đỡ. [Mở bản đã xuất bản](https://spike-ball-mobile-0711.equalsorbet4.chatgpt.site). Link hiện riêng tư, yêu cầu quyền truy cập của chủ dự án.
 
 - Joystick để chạy và chọn hướng; Nhảy để bật; giữ/thả Đánh để lấy lực tới 100%; Đỡ để nhận bóng hoặc chuyền thay.
 - Trên PC, mở [bản bàn phím](prototypes/browser/spike-ball-keyboard.html): mũi tên chạy/chọn hướng, Space nhảy, A đỡ/chuyền, S bỏ nhỏ, giữ/thả D đánh, Z+D đánh dài, C+D đập cắm.
 - [Bản AI theo vai trò](prototypes/browser/spike-ball-role-ai.html) có tình huống bước một thường, lệch và cần người chuyền thay. Chuyền hai ưu tiên bóng hai, phân phối cho chủ công, đối chuyền và phụ công.
 - Các bản cũ, bao gồm set tập 7 điểm, nằm trong cùng thư mục để so sánh.
-- Ưu tiên tiếp theo: thử cảm ứng trên iPhone thật, điều chỉnh nhịp nhảy–đánh và tiếp tục cải thiện trận đấu/AI. Engine và phiên bản còn mở.
+- Ưu tiên tiếp theo: thử cảm ứng trên iPhone thật, điều chỉnh nhịp nhảy–đánh và tiếp tục cải thiện trận đấu/AI. Bản gameplay HTML được giữ để đối chiếu trong quá trình chuyển sang Godot.
 
 Xem [bàn giao mobile](docs/MOBILE_HANDOFF.md) để biết cách chạy và phạm vi kiểm tra.
+
+## Bộ thiết kế và bàn giao mới
+
+- [Nhân vật và đồng phục 6 đội](art/README.md).
+- [Bàn giao Godot và việc cần làm tiếp](docs/HANDOFF_GODOT_CAMERA.md).
+- [Demo thử số áo](prototypes/browser/spike-ball-jerseys.html).
 
 ## Định hướng
 
 - Một sân, hai đội, 6 cầu thủ mỗi bên. Người chơi điều khiển một người; các cầu thủ còn lại là AI.
-- Camera cao từ sau đội người chơi: đội bạn ở dưới, đối thủ ở trên, lưới ngang.
+- Camera cao góc chéo đã được duyệt; giữ góc thẳng để so sánh trong bản thử Godot.
 - Tọa độ thế giới `(x, y, z)` và hàm chiếu riêng; sprite không nhỏ đi theo khoảng cách.
 - Sân có màu dễ nhìn từ phiên bản đầu; không dùng sân hộp xám.
 - Tự tạo cầu thủ, thay người, quan sát khi dự bị, phong độ, tập luyện, nghỉ ngơi và chấn thương.
@@ -43,7 +51,7 @@ cd spike-ball
 
 Hai thành viên clone cùng repository và làm trên các nhánh riêng. Quyền ghi của thành viên thứ hai cần được chủ repository cấp trước khi push.
 
-Engine đang cân nhắc: Godot 4. Phiên bản cụ thể và nền tảng phát hành chưa chốt. Khi chốt engine, mã nguồn game đặt trong `game/`; hướng dẫn chạy và xuất bản sẽ bổ sung cùng bản chạy đầu tiên.
+Engine đã chọn: Godot 4; bản thử đầu tiên dùng Godot 4.7.2 stable và GDScript, hướng phát hành app mobile. Mã nguồn mới nằm trong `game/`. Chưa xuất bản build iOS/Android.
 
 ## Phạm vi phát hành
 
